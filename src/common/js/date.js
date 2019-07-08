@@ -1,3 +1,4 @@
+/* eslint-disable */
 export function formatDate(date, fmt) {
 	if (/(y+)/.test(fmt)) {
 		fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length));
@@ -14,10 +15,10 @@ export function formatDate(date, fmt) {
 	for (let k in o) {
 		// console.log(k);
 		if (new RegExp(`(${k})`).test(fmt)) {
-			let str =''+ o[k];
+			let str = '' + o[k];
 			// console.log(str);
 			// console.log(RegExp.$1);
-			fmt=fmt.replace(RegExp.$1, (RegExp.$1 === 2) ? str : padLeftZero(str));
+			fmt = fmt.replace(RegExp.$1, (RegExp.$1 === 2) ? str : padLeftZero(str));
 		}
 	}
 	return fmt;

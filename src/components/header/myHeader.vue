@@ -60,7 +60,7 @@
 						</div><!-- 优惠信息 -->
 						<!-- 优惠信息列表 -->
 						<ul class="main__supports" v-if="seller.supports">
-							<li class="support__item" v-for="item in seller.supports">
+							<li class="support__item" v-for="item in seller.supports" :key="item.type">
 								<span class="item__icon" :class="classMap[item.type]"></span>
 								<span class="item__text">{{item.description}}</span>
 							</li>
@@ -90,6 +90,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+/* eslint-disable */
 import star from 'components/star/star';
 export default {
 	props: {

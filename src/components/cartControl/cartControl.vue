@@ -11,6 +11,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+/* eslint-disable */
 	import Vue from 'vue';
 	export default {
 		props: {

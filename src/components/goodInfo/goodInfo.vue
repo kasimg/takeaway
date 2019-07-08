@@ -70,6 +70,7 @@
 </template>
 
 <script type="overview/ecmascript-6">
+/* eslint-disable */
 	import BScroll from 'better-scroll';
 	import cartControl from 'components/cartControl/cartControl';
 	import split from 'components/split/split';

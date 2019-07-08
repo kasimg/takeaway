@@ -76,6 +76,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+/* eslint-disable */
 // 引入+-按钮组件和滚动js组件
 import cartControl from 'components/cartControl/cartControl';
 import BScroll from 'better-scroll';

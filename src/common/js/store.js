@@ -1,3 +1,4 @@
+/* eslint-disable */
 export function saveToLocal(id, key, value) {
 	// console.log(id,key,value);
 	let seller = window.localStorage.__sellers__;
@@ -24,15 +25,15 @@ export function saveToLocal(id, key, value) {
 export function loadFromLocal(id, key, def) {
 	let seller = window.localStorage.__sellers__;
 	// 如果之前没有保存过，那么返回默认值
-	if(!seller){
+	if (!seller) {
 		return def;
 	}
 	// 若保存过，但是没有保存这次想要的商家信息，那么依然返回默认值
-	let seller__info=JSON.parse(seller)[id];
-	if(!seller__info){
+	let seller__info = JSON.parse(seller)[id];
+	if (!seller__info) {
 		return def;
 	}
 	// 若保存过这次想要的商家里特定key值的信息，那么就返回该信息，否则还是返回默认值
-	let info__value=seller__info[key];
-	return info__value||def;
+	let info__value = seller__info[key];
+	return info__value || def;
 };

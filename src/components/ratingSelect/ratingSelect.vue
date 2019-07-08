@@ -20,6 +20,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+/* eslint-disable */
 	const POSITIVE=0;
 	const NEGATIVE=1;
 	const ALL=2;
